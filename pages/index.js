@@ -9,7 +9,7 @@ function Home() {
 
   return (
     <>
-      <div class="flexbox-container">
+      <div className="flexbox-container">
         <div>
           <MenuButtonBlue>Gerenciar pontos</MenuButtonBlue>
         </div>
