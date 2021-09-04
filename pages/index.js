@@ -1,5 +1,4 @@
 
-import React from 'react';
 import ReactDOM from 'react-dom';
 import MenuButtonBlue from '../src/components/Buttons/MenuButtonBlue/Index';
 import MenuButtonNoColor from '../src/components/Buttons/MenuButtonNoColor/Index';
