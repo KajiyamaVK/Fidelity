@@ -17,14 +17,12 @@
     
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-content: space-around;
-
+    justify-content: space-around;
 }
 
-.inputLarge{
+.input{
 
-    font-size: 200px;
+    margin-top:200px;
 
 }
 
