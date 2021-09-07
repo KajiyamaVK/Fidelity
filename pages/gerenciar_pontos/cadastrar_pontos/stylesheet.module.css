@@ -1,0 +1,24 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color:white;
+    height: 80vh;
+    
+}
+
+.flexContainer{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+    height: 80vh;
+}
+
+.input{
+
+    margin-top:200px;
+
+}

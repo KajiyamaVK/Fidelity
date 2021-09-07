@@ -18,7 +18,7 @@ props.hoverColor = &hover text color
 const useStyles = makeStyles((theme) => ({
     margin: {
         borderRadius: '20px',
-        padding: '0px 16px'
+        padding: '0px 16px',
     },
     outlined: {
         border: '1px solid black',
@@ -33,6 +33,7 @@ function createButtonStyle(backColor, hoverBackColor, mainColor, hoverColor, fon
             color: mainColor,
             backgroundColor: backColor,
             fontSize: fontSize,
+            width: '70vw',
             '&:hover': {
                 backgroundColor: hoverBackColor,
                 color: hoverColor,
