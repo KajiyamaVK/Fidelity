@@ -1,8 +1,6 @@
 
 import ReactDOM from 'react-dom';
-import MenuButtonBlue from '../src/components/Buttons/MenuButtonBlue/Index';
-import MenuButtonNoColor from '../src/components/Buttons/MenuButtonNoColor/Index';
-import MenuButtonRed from '../src/components/Buttons/MenuButtonRed/Index';
+import MenuButton from '../src/components/Buttons/MenuButton/Index';
 
 function Home() {
 
@@ -10,10 +8,10 @@ function Home() {
     <>
       <div className="flexbox-container">
         <div>
-          <MenuButtonBlue>Gerenciar pontos</MenuButtonBlue>
+          <MenuButton text="Gerenciar pontos" backColor="#359AEC" hoverBackColor="#17466C" mainColor="#fff" hoverColor="#fff" fontSize="80px" />
         </div>
         <div>
-          <MenuButtonNoColor>Cadastrar Clientes</MenuButtonNoColor>
+          <MenuButton text="Cadastrar Cliente" fontSize="80px" hoverColor="#fff" hoverBackColor="#888888" outlined />
         </div>
       </div>
 
