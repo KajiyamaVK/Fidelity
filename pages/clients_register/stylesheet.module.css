@@ -1,0 +1,27 @@
+#main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+@media all and (min-width: 600px) {
+    #main{
+        margin:40px;
+        margin-right: 40px;
+        overflow: hidden; 
+    }
+
+    .input_group{
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #inputName{
+        max-width: 400px;
+        height: 40px;
+        font-size: 30px;
+        border: 1px solid grey
+    }
+}

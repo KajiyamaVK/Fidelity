@@ -1,0 +1,56 @@
+
+
+#mainMenu{
+    background-color: #2C005C;
+    max-width: 200px;
+    min-width: 200px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.link{
+    text-decoration: none;
+    color:white;
+}
+
+
+.menuItem{
+    color: white;
+    text-decoration: none;
+    border-color: #514c72;
+    width: 80%;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.subMenu{
+    padding-left: 10px;
+    background-color: #3B1C5C;
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+.invisible{
+    display:none;
+}
+
+
+.subMenuItem{
+    text-decoration: none;
+    color: white;
+    margin: 20px 20px;
+}
+
+.icon{
+    margin-right: 10px;
+}
+
+.selected{
+    background-color: white !important;
+    color: black !important;
+    border-radius: 25px;
+    padding: 10px;
+}

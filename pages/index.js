@@ -1,27 +1,27 @@
 
-import ReactDOM from 'react-dom';
-import MenuButton from '../src/components/Buttons/MenuButton/Index';
-import Link from 'next/Link';
-import Button from '@material-ui/core/Button';
+import { useState } from 'react';
+import MainMenu from '../src/components/MainMenu';
+import MainScreen from '../src/components/MainScreen';
 
 function Home() {
 
+    const [pageTo, setPageTo] = useState('Home');
+
+    function handleChange(menuLink) {
+        setPageTo(menuLink);
+    }
+
     return (
         <>
-            <div className="flexbox-container">
+            <div style={{ display: 'flex' }}>
                 <div>
-                    {/* <Link href="/gerenciar_pontos" passHref>
-                        <MenuButton text="Gerenciar pontos" backColor="#359AEC" hoverBackColor="#17466C" mainColor="#fff" hoverColor="#fff" fontSize="80px" />
-                    </Link> */}
-                    <Link href="/gerenciar_pontos" passHref>
-                        <Button variant="contained" color="secondary">About</Button>
-                    </Link>
+                    <MainMenu menuSelected={pageTo} changeMenuPage={handleChange} />
                 </div>
                 <div>
-                    <Link href="/cadastrar_cliente" passHref>
-                        <MenuButton text="Cadastrar Cliente" fontSize="80px" hoverColor="#fff" hoverBackColor="#888888" outlined />
-                    </Link>
+                    {/* {pageTo} */}
+                    <MainScreen menuSelected={pageTo} />
                 </div>
+
             </div>
 
         </>
