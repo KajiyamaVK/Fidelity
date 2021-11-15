@@ -41,7 +41,8 @@
 .subMenuItem{
     text-decoration: none;
     color: white;
-    margin: 20px 20px;
+    margin: 20px 20px 20px 20px;
+
 }
 
 .icon{
@@ -54,3 +55,5 @@
     border-radius: 25px;
     padding: 10px;
 }
+
+

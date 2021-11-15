@@ -5,3 +5,7 @@ body {
   font-family: Roboto,'Segoe UI';
 }
 
+::placeholder{
+  color: rgb(190, 190, 190);
+}
+
