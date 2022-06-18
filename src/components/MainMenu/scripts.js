@@ -13,9 +13,19 @@ function selectElement(e) {
 
 function showSubMenu(e) {
 
-    const callerId = e.target.id;
+    const callerId = e.currentTarget.id;
+    const callerArrowElement = document.getElementById( `${callerId}Arrow`);
     const subMenus = document.getElementsByClassName(style.subMenu);
     const subMenusItems = document.getElementsByClassName(style.selected);
+    const arrowSituation = callerArrowElement.getAttribute('sit');
+
+    if(arrowSituation === 'closed'){
+        callerArrowElement.style.transform = 'rotate(90deg)';
+        callerArrowElement.setAttribute('sit','opened');
+    } else if (arrowSituation === 'opened'){
+        callerArrowElement.style.transform = 'rotate(360deg)';
+        callerArrowElement.setAttribute('sit','closed');
+    }
 
     for (const key of subMenusItems) {
         key.classList.remove(style.selected);

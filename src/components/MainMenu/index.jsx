@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStar, faPen, faHome } from '@fortawesome/free-solid-svg-icons'
+import { faStar, faPen, faHome, faAngleRight } from '@fortawesome/free-solid-svg-icons'
 
 import Link from "next/Link"
 import style from './stylesheet.module.css'
@@ -30,6 +30,7 @@ export default function MainMenu(props) {
 
             <div className={style.menuItem} id='menuRegister' onClick={(e) => showSubMenu(e)}>
                 <FontAwesomeIcon icon={faPen} className={style.icon} />Cadastros
+                <FontAwesomeIcon id='menuRegisterArrow' className={style.menuArrow} icon={faAngleRight} sit='closed'/>
             </div>
 
             <div className={`${style.subMenu} ${style.invisible}`} id="subMenuRegister">
@@ -60,7 +61,7 @@ export default function MainMenu(props) {
                 </div>
             </div>
 
-        </div >
+        </div>
     )
 
 }
